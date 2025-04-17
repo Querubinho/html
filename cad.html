@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+     *{
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        height: 100vh;
+        margin: 0;
+        background: url(https://usagif.com/wp-content/uploads/gif/outerspace-39.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Abril Fatface", serif;
+    }
+
+    main {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+    input{
+        border-radius: 5px;
+        width: 300px;
+        height: 30px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    input:hover{
+
+        width: 360px;
+        height: 40px;
+  
+    }
+
+    .botao:hover{
+       
+        background: rgb(0, 65, 65);
+    }
+
+    .botao{
+        margin-top: 30px;
+        background: darkcyan;
+        color: whitesmoke;
+        padding: 5px 165px 5px 165px;
+        border-radius: 15px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .voltar:hover{
+    
+     background: rgb(1, 37, 71);
+    }
+
+    .voltar{
+        margin-top: 30px;
+        background: rgb(3, 74, 141);
+        color: whitesmoke;
+        padding: 5px 175px 5px 175px; 
+        border-radius: 15px;
+        font-size: 15px;
+        text-decoration: none;
+        border: 1px solid black;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <main>
+        <h1>CADASTRO</h1> <hr>
+    <form method="post">
+        Nome: <input type="text" name="nome" placeholder="Digite seu nome aqui" required ><br>
+        Senha: <input type="password" name="senha" placeholder="Digite sua senha aqui" required><br>
+        Idade: <input type="number" name="idade" placeholder="Digite sua idade aqui" required><br>
+        Email: <input type="email" name="email" placeholder="Digite seu Email aqui" required><br>
+        <button class="botao" type="submit">Cadastrar</button> <br>
+        <a href="/escola/pythonhtml/index.html" class="voltar" target="_blank">Voltar</a>
+    </form>
+</main>
+
+</body>
+</html> 
